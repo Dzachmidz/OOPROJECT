@@ -25,15 +25,15 @@ public class Balok {
         this.ComputeAndSetVolume();
     }
     
-    public void SetPanjang(){
+    public void SetPanjang(double panjang){
         this.panjang = panjang;
     }
     
-    public void SetLebar(){
+    public void SetLebar(double lebar){
         this.lebar = lebar;
     }
     
-    public void SetTinggi(){
+    public void SetTinggi(double tinggi){
         this.tinggi = tinggi;
     }
     
@@ -42,6 +42,6 @@ public class Balok {
     }
     
     public void GetVolume(){
-        System.out.println("Balok dengan panjang" +this.panjang+ ", lebar" +this.lebar+ ", tinggi" +this.tinggi+ "memiliki volume: " +this.volume);
+        System.out.println("Balok dengan panjang" + this.panjang + ", lebar" + this.lebar + ", tinggi" + this.tinggi + "memiliki volume: " + this.volume);
     }
 }

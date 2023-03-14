@@ -38,22 +38,29 @@ public class Main {
                    break;
                    
                case 2:
+                   Balok balok = new Balok();
                    System.out.println("Masukkan panjang balok: ");
                    double panjang = input.nextDouble();
+                   balok.SetPanjang(panjang);
                    System.out.println("Masukkan lebar balok: ");
                    double lebar = input.nextDouble();
+                   balok.SetLebar(lebar);
                    System.out.println("Masukkan tinggi balok: ");
                    double tinggi = input.nextDouble();
-                   Balok balok = new Balok (panjang, lebar, tinggi);
+                   balok.SetTinggi(tinggi);
+                   balok.ComputeAndSetVolume();
                    balok.GetVolume();
                    break;
                    
                case 3: 
+                   Tabung tabung = new Tabung();
                    System.out.println("Masukkan radius tabung: ");
                    double radius = input.nextDouble();
+                   tabung.SetRadius(radius);
                    System.out.println("Masukkan tinggi tabung: ");
                    double tinggi_tabung = input.nextDouble();
-                   Tabung tabung = new Tabung (radius, tinggi_tabung);
+                   tabung.SetTinggi(tinggi_tabung);
+                   tabung.ComputeAndSetVolume();
                    tabung.GetVolume();
                    break;
                    
